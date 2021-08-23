@@ -1,17 +1,23 @@
-import Sandwich, { context } from '.'
+import Sandwich from '.'
 
-const f = Sandwich(
-  function(ctx: context) {
-    console.log(1)
-    ctx.vege(ctx)
+const f = Sandwich<string, number>([
+  function(vege, ctx) {
+    console.log('1. before')
+    vege(ctx)
+    console.log('1. after')
+    return 1
   },
-  function(ctx: context) {
-    ctx.vege(ctx)
-    console.log(2)
-  },
-  function(ctx: context) {
-    console.log(3)
+  function(vege, ctx) {
+    console.log('2. before')
+    vege(ctx)
+    console.log('2. after')
+    return 2
+  }
+],
+  function(ctx) {
+    console.log('vege', ctx)
+    return 3
   }
 )
 
-f()
+console.log(f('gogo'))

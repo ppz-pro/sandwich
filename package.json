@@ -1,7 +1,7 @@
 {
   "name": "@ppzp/sandwich",
   "version": "0.0.0",
-  "description": "code lide sandwich",
+  "description": "code like sandwich",
   "main": "index.js",
   "keywords": [
     "aop",
@@ -9,7 +9,5 @@
   ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@tsconfig/node12": "^1.0.9"
-  }
+  "devDependencies": {}
 }
