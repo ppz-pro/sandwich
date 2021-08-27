@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ppzp/sandwich": "file:../ppzp-sandwich-0.0.1.tgz"
+  }
+}
