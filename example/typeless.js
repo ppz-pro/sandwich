@@ -1,5 +1,3 @@
-# 如果不考虑类型
-``` js
 const Sandwich = require('@ppzp/sandwich/typeless')
 
 const f = Sandwich(
@@ -15,6 +13,12 @@ const f = Sandwich(
     str += '2a'
     return str
   },
+  function(vege, str) {
+    str += '3b'
+    str = vege(str)
+    str += '3a'
+    return str
+  },
   function(str) {
     return str + '!!'
   }
@@ -22,10 +26,4 @@ const f = Sandwich(
 
 console.log(
   f('start')
-) // 'start1b2b!!2a1a'
-```
-
-但，更简单的写法，使“变数”增多（当前函数，是 bread 还是 vege？）  
-而判断 bread 与 vege 需要引入大量类型控制  
-如果不考虑类型，那这种写法很简单  
-如果需要严格的类型控制，则不好用
+) // 'start1b2b3b!!3a2a1a'

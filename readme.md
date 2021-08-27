@@ -1,5 +1,5 @@
 # 三明治
-构造三明治代码
+构造[三明治代码](https://github.com/ppz-pro/sandwich.ts/blob/master/sandwich.md)
 
 ``` bash
 npm install @ppzp/sandwich
@@ -23,12 +23,6 @@ const f = Sandwich(
       str = vege(str)
       str += '2a'
       return str
-    },
-    function(vege, str) {
-      str += '3b'
-      str = vege(str)
-      str += '3a'
-      return str
     }
   ],
   function(str) {
@@ -38,7 +32,7 @@ const f = Sandwich(
 
 console.log(
   f('start')
-) // 'start1b2b3b!!3a2a1a'
+) // 'start1b2b!!2a1a'
 ```
 
 ##### TS
@@ -58,12 +52,6 @@ const f = Sandwich<string, string> (
       str = vege(str)
       str += '2a'
       return str
-    },
-    function(vege, str) {
-      str += '3b'
-      str = vege(str)
-      str += '3a'
-      return str
     }
   ],
   function(str) {
@@ -73,7 +61,7 @@ const f = Sandwich<string, string> (
 
 console.log(
   f('start')
-) // 'start1b2b3b!!3a2a1a'
+) // 'start1b2b!!2a1a'
 ```
 
 # 一个更“简易”的实现

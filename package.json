@@ -1,6 +1,6 @@
 {
   "name": "@ppzp/sandwich",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "code like sandwich",
   "main": "index.js",
   "scripts": {
