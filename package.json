@@ -1,20 +1,14 @@
 {
   "name": "@ppzp/sandwich",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "code like sandwich",
   "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "dist": "tsc"
-  },
+  "scripts": {},
   "keywords": [
     "aop",
     "sandwich"
   ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "jest": "^27.0.6",
-    "typescript": "^4.4.2"
-  }
+  "devDependencies": {}
 }

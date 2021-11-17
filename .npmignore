@@ -1,6 +1,3 @@
 node_modules
-.test
+example.js
 *.tgz
-
-example
-jest

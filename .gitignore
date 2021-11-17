@@ -1,6 +1,2 @@
 node_modules
-.test
 *.tgz
-
-example/ts.js
-index.js

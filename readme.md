@@ -1,68 +1,8 @@
 # 三明治
-构造[三明治代码](https://github.com/ppz-pro/sandwich.ts/blob/master/sandwich.md)
+构造[三明治代码](https://zhuanlan.zhihu.com/p/434197952)
 
 ``` bash
 npm install @ppzp/sandwich
 ```
 
-# example
-##### JS
-``` js
-const Sandwich = require('@ppzp/sandwich').default
-
-const f = Sandwich(
-  [
-    function(vege, str) {
-      str += '1b'
-      str = vege(str)
-      str += '1a'
-      return str
-    },
-    function(vege, str) {
-      str += '2b'
-      str = vege(str)
-      str += '2a'
-      return str
-    }
-  ],
-  function(str) {
-    return str + '!!'
-  }
-)
-
-console.log(
-  f('start')
-) // 'start1b2b!!2a1a'
-```
-
-##### TS
-``` ts
-import Sandwich from '@ppzp/sandwich'
-
-const f = Sandwich<string, string> (
-  [
-    function(vege, str) {
-      str += '1b'
-      str = vege(str)
-      str += '1a'
-      return str
-    },
-    function(vege, str) {
-      str += '2b'
-      str = vege(str)
-      str += '2a'
-      return str
-    }
-  ],
-  function(str) {
-    return str + '!!'
-  }
-)
-
-console.log(
-  f('start')
-) // 'start1b2b!!2a1a'
-```
-
-# 一个更“简易”的实现
-[点这里](https://github.com/ppz-pro/sandwich.ts/blob/master/typeless.md)
+[使用案例](https://github.com/ppz-pro/sandwich.ts/blob/master/example.js)

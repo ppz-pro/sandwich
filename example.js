@@ -1,4 +1,4 @@
-const Sandwich = require('@ppzp/sandwich/typeless')
+const Sandwich = require('./index')
 
 const f = Sandwich(
   function(vege, str) {
@@ -13,12 +13,6 @@ const f = Sandwich(
     str += '2a'
     return str
   },
-  function(vege, str) {
-    str += '3b'
-    str = vege(str)
-    str += '3a'
-    return str
-  },
   function(str) {
     return str + '!!'
   }
@@ -26,4 +20,4 @@ const f = Sandwich(
 
 console.log(
   f('start')
-) // 'start1b2b3b!!3a2a1a'
+) // 'start1b2b!!2a1a'
